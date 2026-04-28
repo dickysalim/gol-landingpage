@@ -232,14 +232,14 @@ document.querySelectorAll('.carousel').forEach(function(wrapper){
 /* ---------- 9. mpsh_button_handler ---------- */
 [{id:'MPSH-Tokopedia',type:'tokopedia',label:'Tokopedia'},
  {id:'MPSH-Shopee',type:'shopee',label:'Shopee'},
- {id:'MPSH-Tiktok',type:'tiktok',label:'Tiktok Shop'}
+ {id:'MPSH-Tiktok',type:'blibli',label:'Blibli'}
 ].forEach(function(b){
   var el=document.getElementById(b.id);if(!el)return;
   el.addEventListener('click',function(e){
     e.preventDefault();
     var id='MP-'+inboundId;
     window.dataLayer.push({event:'leadEvent',sales_channel:'MPSH',offer_type:b.type,inbound_id:id});
-    window.open('https://wa.me/6281292336268?text='+encodeURIComponent('Kirimkan kode ini ['+id+'] untuk mendapatkan alamat '+b.label+' GOLO Pusat'),'_blank');
+    window.open('https://wa.me/6287769721025?text='+encodeURIComponent('Kirimkan kode ini ['+id+'] untuk mendapatkan alamat '+b.label+' GOLO Pusat'),'_blank');
   });
 });
 
@@ -252,7 +252,7 @@ document.querySelectorAll('.carousel').forEach(function(wrapper){
   var notFoundMessage=document.getElementById('notFoundMessage');
   var searchResultsContainer=document.getElementById('searchResultsContainer');
   var accordionContainer=document.getElementById('accordionContainer');
-  var ROUTING_PHONE='6281292336268';
+  var ROUTING_PHONE='6287769721025';
 
   /* If distributor widget elements don't exist on this page, bail out gracefully */
   if(!searchInput||!suggestionBox||!notFoundMessage||!searchResultsContainer||!accordionContainer)return;

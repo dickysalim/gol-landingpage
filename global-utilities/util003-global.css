@@ -6,8 +6,8 @@ button{cursor:pointer}
 
 /* ===== HEADER ===== */
 .site-header{background:#000;color:#fff;width:100%;position:relative;z-index:40}
-.header-inner{display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 16px}
-.header-logo{height:40px;width:auto;object-fit:contain;position:relative;left:-8.5px}
+.header-inner{display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 32px}
+.header-logo{height:40px;width:auto;object-fit:contain}
 .hamburger-btn{background:transparent;border:none;padding:8px;border-radius:6px;color:#fff;display:flex;align-items:center;justify-content:center;transition:background .2s}
 .hamburger-btn:hover{background:rgba(255,255,255,.1)}
 .hamburger-btn svg{width:32px;height:32px}
@@ -37,9 +37,9 @@ button{cursor:pointer}
 .mp-btn img{width:100%;height:auto}
 
 /* ===== WA BUTTONS ===== */
-.wa-btn-wrapper{padding:16px;display:flex;justify-content:center;background:#000}
+.wa-btn-wrapper{padding:8px 0;display:flex;justify-content:center;background:#000}
 .whatsapp-button,.whatsapp-button-mdc{background:#000;border:none;padding:0;cursor:pointer;display:block;width:100%}
-.whatsapp-button img,.whatsapp-button-mdc img{display:block;width:100%;max-width:360px;margin:0 auto}
+.whatsapp-button img,.whatsapp-button-mdc img{display:block;width:100%}
 
 /* ===== YOUTUBE FACADE (inline video-list only) ===== */
 .yt-facade{position:absolute;inset:0;width:100%;height:100%;cursor:pointer;background:#000}
@@ -51,14 +51,14 @@ button{cursor:pointer}
 .yt-facade iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
 
 /* Main YT section — CLS-safe with padding-bottom trick */
-.yt-main-section{background:#fbf4db;padding:16px 0 0}
+.yt-main-section{background:#000;padding:16px 0 0}
 .yt-main-wrapper{padding:0 24px}
 .yt-main-ratio{position:relative;width:100%;padding-bottom:56.25%;background:#000;border-radius:8px;overflow:hidden;cursor:pointer}
 .yt-main-ratio img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:opacity .2s}
 .yt-main-ratio:hover img{opacity:.85}
 .yt-main-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:42px;background:rgba(0,0,0,.7);border:none;border-radius:12px;display:flex;align-items:center;justify-content:center;pointer-events:none;transition:background .15s}
 .yt-main-ratio iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
-.yt-description{display:block;min-height:20px;padding:8px 24px;font-size:12px;font-style:italic;color:#555}
+.yt-description{display:block;min-height:20px;padding:8px 24px;font-size:12px;font-style:italic;color:#aaa}
 
 /* Video list (testi) */
 .video-list{width:100%;margin:0 auto;padding:20px;background:#f5f3eb}
@@ -127,16 +127,16 @@ button{cursor:pointer}
 #mganik-distributor-wrapper .not-found-msg{margin-top:15px;padding:12px;background:#ffebee;color:#c62828;border-radius:8px;font-size:14px;display:none;line-height:1.5}
 #mganik-distributor-wrapper .loading-status{font-size:12px;color:#fff;text-align:center;margin-bottom:10px}
 #mganik-distributor-wrapper #accordionContainer{max-width:360px;margin:0 auto;width:100%}
-#mganik-distributor-wrapper .acc-prov-item{margin-bottom:10px;border:none;border-radius:8px;overflow:hidden;background:#fff}
+#mganik-distributor-wrapper .acc-prov-item{margin-bottom:10px;border:none;border-radius:8px;overflow:hidden;background:#000}
 #mganik-distributor-wrapper .acc-prov-header{background:#fec641;color:#111;padding:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px}
 #mganik-distributor-wrapper .acc-prov-header::after{content:'\25BC';font-size:12px;transition:transform .3s}
 #mganik-distributor-wrapper .acc-prov-header.active::after{transform:rotate(-180deg)}
-#mganik-distributor-wrapper .acc-city-item{margin-bottom:8px;border:none;border-radius:6px;overflow:hidden;background:#fff}
+#mganik-distributor-wrapper .acc-city-item{margin-bottom:8px;border:none;border-radius:6px;overflow:hidden;background:#000}
 #mganik-distributor-wrapper .acc-city-header{padding:12px 15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:15px;color:#333;background:#fed974}
 #mganik-distributor-wrapper .acc-city-header::after{content:'\25BC';font-size:10px;transition:transform .3s;color:#666}
 #mganik-distributor-wrapper .acc-city-header.active::after{transform:rotate(-180deg)}
-#mganik-distributor-wrapper .acc-prov-body,#mganik-distributor-wrapper .acc-city-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .2s ease-out;background:#f9f9f9}
-#mganik-distributor-wrapper .acc-city-body{background:#fff}
+#mganik-distributor-wrapper .acc-prov-body,#mganik-distributor-wrapper .acc-city-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .2s ease-out;background:#000}
+#mganik-distributor-wrapper .acc-city-body{background:#000}
 #mganik-distributor-wrapper .acc-prov-body.open,#mganik-distributor-wrapper .acc-city-body.open{grid-template-rows:1fr}
 #mganik-distributor-wrapper .acc-prov-body-inner,#mganik-distributor-wrapper .acc-city-body-inner{overflow:hidden}
 #mganik-distributor-wrapper .acc-city-content{padding:15px;display:flex;flex-direction:column;gap:20px;align-items:center}
@@ -170,8 +170,8 @@ button{cursor:pointer}
 .carousel,#mganik-distributor-wrapper,.site-footer{content-visibility:auto;contain-intrinsic-size:auto 600px}
 
 /* ===== FOOTER ===== */
-.site-footer{background:#000;color:#fdf8ee;padding:25px;width:100%}
-.footer-inner{max-width:360px;margin:0 auto;width:100%}
+.site-footer{background:#000;color:#fdf8ee;padding:25px 32px;width:100%}
+.footer-inner{max-width:100%;margin:0;width:100%}
 .footer-top{display:flex;flex-direction:column;gap:40px;margin-bottom:40px;border-bottom:1px solid rgba(253,248,238,.2);padding-bottom:32px}
 .footer-logo{height:48px;width:auto;object-fit:contain}
 .footer-company-name{font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px}
