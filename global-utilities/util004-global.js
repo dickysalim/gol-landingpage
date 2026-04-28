@@ -116,9 +116,8 @@ window.inboundId=inboundId;
   };
 })();
 
-/* ---------- 4. ccom_mdcs_button_handler ---------- */
-[{sel:'.whatsapp-button',phone:'6281584021443',pre:'CC-',ch:'CCOM'},
- {sel:'.whatsapp-button-mdc',phone:'6282195277642',pre:'DC-',ch:'MDCS'}
+/* ---------- 4. ccom_button_handler ---------- */
+[{sel:'.whatsapp-button',phone:'6281292336268',pre:'CC-',ch:'CCOM'}
 ].forEach(function(cfg){
   document.querySelectorAll(cfg.sel).forEach(function(btn){
     btn.addEventListener('click',function(e){
@@ -240,7 +239,7 @@ document.querySelectorAll('.carousel').forEach(function(wrapper){
     e.preventDefault();
     var id='MP-'+inboundId;
     window.dataLayer.push({event:'leadEvent',sales_channel:'MPSH',offer_type:b.type,inbound_id:id});
-    window.open('https://wa.me/6285882893126?text='+encodeURIComponent('Kirimkan kode ini ['+id+'] untuk mendapatkan alamat '+b.label+' mGanik Pusat'),'_blank');
+    window.open('https://wa.me/6281292336268?text='+encodeURIComponent('Kirimkan kode ini ['+id+'] untuk mendapatkan alamat '+b.label+' GOLO Pusat'),'_blank');
   });
 });
 
@@ -253,7 +252,7 @@ document.querySelectorAll('.carousel').forEach(function(wrapper){
   var notFoundMessage=document.getElementById('notFoundMessage');
   var searchResultsContainer=document.getElementById('searchResultsContainer');
   var accordionContainer=document.getElementById('accordionContainer');
-  var ROUTING_PHONE='6285882893126';
+  var ROUTING_PHONE='6281292336268';
 
   /* If distributor widget elements don't exist on this page, bail out gracefully */
   if(!searchInput||!suggestionBox||!notFoundMessage||!searchResultsContainer||!accordionContainer)return;
@@ -280,7 +279,7 @@ document.querySelectorAll('.carousel').forEach(function(wrapper){
   function fetchDist(){
     if(document.getElementById('mganik-distributor-script'))return;
     var s=document.createElement('script');s.id='mganik-distributor-script';
-    s.src='https://mganik-cache.pages.dev/prod/mganik-distributors-v1.js';
+    s.src='https://mganik-cache.pages.dev/prod/golo-distributors-v1.js';
     document.head.appendChild(s);
   }
   /* Expose for Phase 2 reveal handler; also fallback timeout */
